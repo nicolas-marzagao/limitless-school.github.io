@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limitless School</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="shortcut icon" href="../images/limitless.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/limitless.png" type="image/x-icon">
 </head>
 <body>
-  <header>
+  <header class="title">
+    <img src="images/limitless.png" alt="logo" style="position: absolute;   transform: translateX(-300px);">
     <h1>Limitless School</h1>
+    
   </header>
 
   <nav>
@@ -17,5 +19,10 @@
     <a href="#">About</a>
     <a href="#">Contact</a>
   </nav>
+  <div class="block">
+    <h1 id="display">0 clicks</h1>
+    <button id="button" onclick="add()">click me</button> 
+  </div>  
+  <script src="js/script.js"></script>
 </body>
 </html>
