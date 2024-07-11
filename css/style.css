@@ -176,7 +176,7 @@ nav a:hover {
 
 
 .teacher-section button:hover::after {
-    animation: sheen var(--ease-elastic-in-1) 2s infinite;
+    animation: sheen var(--ease-elastic-in-1) 1s infinite;
     overflow: hidden;
 }
 
@@ -197,10 +197,9 @@ nav a:hover {
   transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
 
-.left {
+.about-section {
   font-size: 20px;
   display: inline-flex;
-  text-align: center;
   flex-direction: column;
   justify-content: left;
   width: 700px;
@@ -209,6 +208,7 @@ nav a:hover {
   max-width: 1900px;
   padding-left: 20px;
   margin-top: 15px;
+  text-align: center;
 }
 
 .cursos { 
@@ -218,7 +218,7 @@ nav a:hover {
   flex-direction: column; 
   align-items: center;
   justify-content: center;    
-  min-width: 50px;
+  width: auto;
 }
 
 .image-item {    
@@ -243,4 +243,69 @@ nav a:hover {
   transition: ease-in-out;   
   gap: 20px;    
   margin: 20px;
+}
+
+.teacher-img {
+  transform: translateX(100px);
+}
+
+.eventos {
+  height: 500px;
+  padding-top: 10px;
+  background-color: #dae7f1;
+}
+
+.contact-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.background-img {
+  position: absolute;
+  z-index: -1;
+  transform: translateX(-1050px) translateY(-250px);
+  background-image: url(/images/background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.contact {
+  text-align: center;
+}
+
+.container {
+    text-align: left;
+}
+
+.contact h2 {
+    color: #337ab7;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
