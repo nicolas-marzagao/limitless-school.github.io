@@ -332,3 +332,156 @@ nav a:hover {
     text-align: center;
   }
 }
+
+/* phone styles */
+@media (max-width: 883px) and (orientation:landscape) {
+    /* style.css | file:///C:/Users/arthu/Documents/www.limitschool.com/css/style.css */
+
+  .hero_section {
+    /* flex-direction: row; */
+    flex-direction: column-reverse;
+  }
+
+  header img {
+    width: 559px;
+  }
+
+  .teacher-section {
+    /* padding-top: 108px; */
+    /* padding-bottom: 85px; */
+    /* height: 500px; */
+    padding-top: 670px;
+    height: 527px;
+  }
+
+  .teacher-section img {
+    /* width: 600px; */
+    /* margin-right: 150px; */
+    width: 741px;
+    margin-right: 125px;
+  }
+
+  @media (-webkit-device-pixel-ratio: 1) {
+    .about-section {
+      width: 900px;
+    }
+  }
+
+  @media (-moz-device-pixel-ratio: 1) {
+    .teacher-section button {
+      /* padding-bottom: 40px; */
+      /* transform: translateX(210px); */
+      padding-bottom: 39px;
+      transform: translateX(342px);
+      padding-top: 3px;
+    }
+    .about-section {
+      /* margin-top: 30px; */
+      margin-top: 11px;
+      padding-bottom: 41px;
+    }
+  }
+
+  .teacher-section button {
+    /* width: 160px; */
+    /* height: 80px; */
+    width: 162px;
+    height: 47px;
+  }
+
+  .sheen::after {
+    /* right: -50%; */
+    right: -51%;
+  }
+
+  .limit-en-course {
+    /* height: 467px; */
+    height: 441px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 883px) and (orientation: landscape) {
+    .split-line {
+      /* top: 17px; */
+      top: -31px;
+    }
+    .title h1 {
+      font-size: 54px;
+      right: 63px;
+      top: 52px;
+    }
+
+    .title h2 {
+      top: 16px;
+      font-size: 44px;
+      right: 66px;
+    }
+
+    .split-line {
+      top: 17px;
+      width: 990px;
+    }
+
+    header img {
+      width: 500px;
+      transform: translateX(-50px) translateY(150px);
+    }
+
+    nav ul {
+      flex-direction: row; /* Stack nav items vertically */
+      align-items: center; /* Center items */
+    }
+
+    nav li {
+      margin: 10px 0; /* Add vertical spacing */
+    }
+
+    .limit-en-course img {
+      width: 250px;
+      transform: translateX(50px) translateY(50px);
+    }
+
+    .blue-button {
+      width: 200px;
+      font-size: 24px;
+      transform: translateX(-50px) translateY(-50px);
+    }
+
+    .hero_section {
+      height: 500px;
+      display: flex;
+      flex-direction: column-reverse;
+      min-width: 800px;
+      max-width: 1900px;
+    }
+
+    .teacher-section {
+      padding-top: 845px;
+      padding-bottom: 85px;
+      height: 572px;
+    }
+
+    .teacher-section img {
+      width: 785px;
+      margin-right: 122px;
+    }
+
+    .teacher-section button {
+      transform: translateX(100px);
+    }
+
+    .about-section {
+      width: 107%;
+      text-align: center;
+    }
+
+    .image-grid {
+      grid-template-columns: repeat(1, 1fr); /* One column for phone */
+    }
+
+    .contact-container {
+      flex-direction: column; /* Stack content vertically */
+    }
+  }
+}
+
