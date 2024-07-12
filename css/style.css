@@ -165,7 +165,6 @@ nav a:hover {
 .teacher-section button {
   width: 160px;
   height: 80px;
-  font-size: 26px;
   border-radius: 10px; /* Round the corners */
   transform: translateX(210px);
   background-color: #fe5657;
@@ -196,7 +195,6 @@ nav a:hover {
 }
 
 .about-section {
-  font-size: 18px;
   display: inline-flex;
   flex-direction: column;
   justify-content: left;
@@ -205,10 +203,8 @@ nav a:hover {
   min-width: 50px;
   max-width: 1900px;
   padding-left: 20px;
-  margin-top: 15px;
   text-align: center;
   padding-left: 20px;
-  margin-top: -40px;
 }
 
 .cursos { 
@@ -308,6 +304,17 @@ nav a:hover {
 
 .contact a:hover {
   text-decoration: underline;
+}
+
+/* Chrome style */
+@media (-webkit-device-pixel-ratio: 1) {
+  .teacher-section button{
+    font-size: 26px;
+  }
+  .about-section {
+    font-size: 18px;
+    margin-top: -40px;
+  }
 }
 
 /* Firefox style */
