@@ -1,21 +1,19 @@
-:where(html) {
-  --ease-elastic-in-1: cubic-bezier(.5, -0.25, .75, 1);
-}
-
 :root {
-  --black: hsl(0, 0%, 13%);
-  --dark: hsl(12, 32%, 2%);
-  --gray: hsl(0, 0%, 70%);
-  --white: hsl(0, 0%, 96%);
-  --blue: hsl(241, 81%, 48%);
-  --blue-shadow: hsl(241, 81%, 48%);
+  /*animatio  vars*/
+  --ease-elastic-in-1: cubic-bezier(.5, -0.25, .75, 1);
+
+  /*color vars*/
+  --primary-color: #043962;
+  --secondary-color: #fe5657;
+  --accent-color: #E7677E;
   --blue-sheen: linear-gradient(
     to bottom,
     hsl(241, 90%, 31%),
     hsla(236, 40%, 70%, 0.5) 50%,
     hsl(241, 90%, 31%)
-  );
+  ); 
 }
+
 
 body {
     font-family: sans-serif;
@@ -27,8 +25,12 @@ body {
   position: relative;
   top: 48px;
   width: 100%;
-  height: 5px; /* Adjust the height as needed */
-  background: linear-gradient(to right, #043962 50%, #fe5657 50%); /* Adjust colors */
+  height: 5px;
+  background: linear-gradient(to right, #043962 50%, #fe5657 50%);
+}
+
+.split-line:nth-last-child(2) {
+  transform: translateY(-48px);
 }
 
 .title {
@@ -52,8 +54,8 @@ body {
 }
 
 header {
-  position: relative; /* Position the header for the navbar */
-  height: 300px; /* Adjust height as needed */
+  position: relative;
+  height: 300px;
 }
 
 header img {
@@ -63,14 +65,14 @@ header img {
 }
 
 nav {
-    position: fixed; /* Position the navbar absolutely within the header */
-    top: 0; /* Align the navbar to the top */
-    left: 0; /* Align the navbar to the left */
-    width: 100%; /* Make the navbar full width */
-    background-color: #0439628f;; /* Semi-transparent white background */
-    padding: 15px 0; /* Add padding for spacing */
-    z-index: 1; /* Ensure navbar is on top of the header */
-    backdrop-filter: blur(10px); /* Apply a 10px blur effect */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0439628f;;
+    padding: 15px 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -83,8 +85,8 @@ nav ul {
 }
 
 nav li {
-    display: inline-block; /* Arrange list items horizontally */
-    margin: 0 100px; /* Add spacing between list items */
+    display: inline-block;
+    margin: 0 100px;
 }
 
 nav a {
@@ -116,25 +118,23 @@ nav a:hover {
   height: 90px;
   font-size: 40px;
   transform: translateX(-100px) translateY(-100px);
-  background-color: #1f6da1; /* Light blue background */
-  color: #fff; /* White text */
-  border: none; /* Remove default button border */
-  padding: 15px 30px; /* Add padding */
-  border-radius: 5px; /* Round the corners */
-  font-weight: bold; /* Make text bold */
-  box-shadow: 0 2px 20px #1f6da1; /* Add shadow */
-  text-shadow: 0 1px 1px #00000033; /* Add text shadow */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: all 0.2s ease; /* Add smooth transition */
-  
-  /* Outer Border */
+  background-color: #1f6da1;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 2px 20px #1f6da1;
+  text-shadow: 0 1px 1px #00000033;
+  cursor: pointer;
+  transition: all 0.2s ease;
   outline: 5px solid #fff;
   outline-offset: -10px; 
 }
 
 .blue-button:hover {
-  background-color: #1f6da1; /* Darker blue on hover */
-  outline-offset: -4px; /* Adjust outer border offset */
+  background-color: #1f6da1;
+  outline-offset: -4px;
 }
 
 .teacher-section {
@@ -165,10 +165,10 @@ nav a:hover {
 .teacher-section button {
   width: 160px;
   height: 80px;
-  border-radius: 10px; /* Round the corners */
+  border-radius: 10px;
   transform: translateX(210px);
   background-color: #fe5657;
-  overflow: hidden; /* Keep this, but add padding */
+  overflow: hidden;
   padding-bottom: 32px;
 }
 
@@ -257,6 +257,7 @@ nav a:hover {
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
+  margin-top: 100px;
 }
 
 .contact-container a {
@@ -334,154 +335,6 @@ nav a:hover {
 }
 
 /* phone styles */
-@media (max-width: 883px) and (orientation:landscape) {
-    /* style.css | file:///C:/Users/arthu/Documents/www.limitschool.com/css/style.css */
-
-  .hero_section {
-    /* flex-direction: row; */
-    flex-direction: column-reverse;
-  }
-
-  header img {
-    width: 559px;
-  }
-
-  .teacher-section {
-    /* padding-top: 108px; */
-    /* padding-bottom: 85px; */
-    /* height: 500px; */
-    padding-top: 670px;
-    height: 527px;
-  }
-
-  .teacher-section img {
-    /* width: 600px; */
-    /* margin-right: 150px; */
-    width: 741px;
-    margin-right: 125px;
-  }
-
-  @media (-webkit-device-pixel-ratio: 1) {
-    .about-section {
-      width: 900px;
-    }
-  }
-
-  @media (-moz-device-pixel-ratio: 1) {
-    .teacher-section button {
-      /* padding-bottom: 40px; */
-      /* transform: translateX(210px); */
-      padding-bottom: 39px;
-      transform: translateX(342px);
-      padding-top: 3px;
-    }
-    .about-section {
-      /* margin-top: 30px; */
-      margin-top: 11px;
-      padding-bottom: 41px;
-    }
-  }
-
-  .teacher-section button {
-    /* width: 160px; */
-    /* height: 80px; */
-    width: 162px;
-    height: 47px;
-  }
-
-  .sheen::after {
-    /* right: -50%; */
-    right: -51%;
-  }
-
-  .limit-en-course {
-    /* height: 467px; */
-    height: 441px;
-    padding-bottom: 100px;
-  }
-
-  @media (max-width: 883px) and (orientation: landscape) {
-    .split-line {
-      /* top: 17px; */
-      top: -31px;
-    }
-    .title h1 {
-      font-size: 54px;
-      right: 63px;
-      top: 52px;
-    }
-
-    .title h2 {
-      top: 16px;
-      font-size: 44px;
-      right: 66px;
-    }
-
-    .split-line {
-      top: 17px;
-      width: 990px;
-    }
-
-    header img {
-      width: 500px;
-      transform: translateX(-50px) translateY(150px);
-    }
-
-    nav ul {
-      flex-direction: row; /* Stack nav items vertically */
-      align-items: center; /* Center items */
-    }
-
-    nav li {
-      margin: 10px 0; /* Add vertical spacing */
-    }
-
-    .limit-en-course img {
-      width: 250px;
-      transform: translateX(50px) translateY(50px);
-    }
-
-    .blue-button {
-      width: 200px;
-      font-size: 24px;
-      transform: translateX(-50px) translateY(-50px);
-    }
-
-    .hero_section {
-      height: 500px;
-      display: flex;
-      flex-direction: column-reverse;
-      min-width: 800px;
-      max-width: 1900px;
-    }
-
-    .teacher-section {
-      padding-top: 845px;
-      padding-bottom: 85px;
-      height: 572px;
-    }
-
-    .teacher-section img {
-      width: 785px;
-      margin-right: 122px;
-    }
-
-    .teacher-section button {
-      transform: translateX(100px);
-    }
-
-    .about-section {
-      width: 107%;
-      text-align: center;
-    }
-
-    .image-grid {
-      grid-template-columns: repeat(1, 1fr); /* One column for phone */
-    }
-
-    .contact-container {
-      flex-direction: column; /* Stack content vertically */
-    }
-  }
+@media (max-width: 883px) {
+  
 }
-
