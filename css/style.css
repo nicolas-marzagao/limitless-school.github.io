@@ -336,5 +336,78 @@ nav a:hover {
 
 /* phone styles */
 @media (max-width: 883px) {
+  header img {
+    display: none;
+  }
+  .title {
+    width: 190%;
+    height: 194px;
+  }
 
+  .title h1 {
+    width: max-content;
+    font-size: 77px;
+    text-align: center;
+    top: 17px;
+    right: -38px;
+  }
+
+  .title h2 {
+    width: max-content;
+    font-size: 60px;
+    text-align: center;
+    top: -25px;
+    right: -118px;
+  }
+
+  .split-line {
+    width: 187%;
+  }
+
+  .limit-en-course {
+    width: 187%;
+    font-size: 22px;
+    height: 436px;
+  }
+
+  .blue-button {
+    transform: translateX(-28px) translateY(233px);
+  }
+
+  .limit-en-course img {
+    width: 496px;
+    transform: translateX(6px) translateY(-90px);
+  }
+
+  .teacher-img {
+    transform: translateX(63px);
+}
+.hero_section {
+  height: 1074px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.teacher-section {
+  padding-top: 108px;
+  padding-bottom: 85px;
+  height: 500px;
+}
+
+.about-section {
+  font-size: 29px;
+  width: 663px;
+}
+
+.split-line.sobre {
+  top: 1088px;
+}
+
+.cursos {
+  margin-top: 1123px;
+  background: linear-gradient(to top, #000000, #3533cd);
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
 }
