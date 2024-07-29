@@ -251,6 +251,11 @@ nav a:hover {
   background-color: #dae7f1;
 }
 
+.eventos video {
+  width: 181px;
+  transform: scale(1.7) translateX(343px) translateY(45px);
+}
+
 .contact-container {
   font-family: Arial, sans-serif;
   display: flex;
