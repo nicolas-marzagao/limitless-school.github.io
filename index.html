@@ -11,15 +11,17 @@
 <!-- Header / Navbar -->
 <header>
     <nav class="navbar section-content">
-        <a href="#" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             <div class="nav-image-wrapper">
                 <img src="images/logo.png" alt="Logo" class="nav-image">
             </div>
             <h2 class="logo-text">Limitless School</h2>
         </a>
         <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+
             <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Sobre</a>
@@ -37,6 +39,7 @@
                 <a href="#" class="nav-link">Contato</a>
             </li>
         </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
     </nav>
 </header>
     
@@ -60,8 +63,30 @@
             </div>
         </div>
     </section>
+
+    <!-- about section -->
+    <section class="about-section">
+        <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src="./images/4.png" alt="about" class="about-image">
+            </div>
+            <div class="about-details">
+                <h2 class="section-title">About Us</h2>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dicta voluptate saepe expedita porro itaque qui. Accusamus consequuntur vitae doloribus nisi sint. Culpa corporis, incidunt doloremque voluptate quaerat nesciunt vel.
+                </p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
