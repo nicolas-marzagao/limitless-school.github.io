@@ -1,3 +1,0 @@
-# Notes
-
-- Font: Cooper Hewitt
